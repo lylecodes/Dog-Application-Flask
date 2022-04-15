@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+    <div style="text-align: center">
+        <h1>Welcome to Adopt-A-Dog!</h1>
+        <h3>Fill out the form below to apply</h3>
+        <hr style="width: 40%">
+        <div style="display: flex; justify-content: center">
+            <form action="/entry" method="post">
+                <label for="name">Enter your name:</label>
+                <input type="text" id='name' name="name">
+
+                <p>Select a breed</p>
+                <select name="dogs" id="dogs">
+                    <option id="golden-retriever" value="golden-retriever">Golden Retriever</option>
+                    <option value="pug">Pug</option>
+                    <option value="pitbull">Pitbull</option>
+                </select>
+
+                <p>Select a gender</p>
+                <input type="radio" id="male" name="male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="female">
+                <label for="female">Female</label>
+                <div><button type="submit">Submit</button></div>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
