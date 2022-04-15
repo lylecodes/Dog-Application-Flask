@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+    <h1>Application Submitted!</h1>
+    <h2>Below are the details:</h2>
+    {% for key, value in application.items() %}
+        <h3>{{key}}: {{value}}</h3>
+    {% endfor %}
+</body>
+</html>
